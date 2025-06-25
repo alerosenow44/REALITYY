@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisti in Competizione | Reality Show</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Artisti in Competizione</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#artisti">Artisti</a></li>
+                    <li><a href="#puntate">Puntate</a></li>
+                    <li><a href="#giuria">Giuria</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Il reality che mette alla prova il talento artistico</h2>
+            <p>12 artisti, 10 settimane, 1 vincitore</p>
+            <a href="#artisti" class="btn">Scopri gli artisti</a>
+        </div>
+        <div class="countdown">
+            <h3>Prossima puntata in:</h3>
+            <div id="countdown-timer">
+                <div><span id="days">00</span><span>Giorni</span></div>
+                <div><span id="hours">00</span><span>Ore</span></div>
+                <div><span id="minutes">00</span><span>Min</span></div>
+                <div><span id="seconds">00</span><span>Sec</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Il Reality Show</h2>
+            <p>Artisti in Competizione è il primo reality show che mette alla prova artisti di diverse discipline in sfide creative settimanali. Pittura, scultura, fotografia, digital art e molto altro si incontrano in questo innovativo format.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-palette"></i>
+                    <h3>12</h3>
+                    <p>Artisti</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>1</h3>
+                    <p>Vincitore</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>10</h3>
+                    <p>Puntate</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>50.000</h3>
+                    <p>Premio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="artists" id="artisti">
+        <div class="container">
+            <h2>I Nostri Artisti</h2>
+            <div class="artist-gallery" id="artistGallery">
+                <!-- Gli artisti verranno aggiunti dinamicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="episodes" id="puntate">
+        <div class="container">
+            <h2>Calendario Puntate</h2>
+            <div class="episode-timeline">
+                <div class="timeline-line"></div>
+                <div class="episode-items" id="episodeItems">
+                    <!-- Le puntate verranno aggiunte dinamicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jury" id="giuria">
+        <div class="container">
+            <h2>La Giuria</h2>
+            <div class="jury-members">
+                <div class="jury-member">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Giurata 1">
+                    <h3>Laura Bianchi</h3>
+                    <p>Critica d'arte</p>
+                </div>
+                <div class="jury-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Giurato 2">
+                    <h3>Marco Rossi</h3>
+                    <p>Artista contemporaneo</p>
+                </div>
+                <div class="jury-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Giurata 3">
+                    <h3>Anna Verdi</h3>
+                    <p>Curatrice museale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contatti">
+        <div class="container">
+            <h2>Contattaci</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Artisti in Competizione</h3>
+                    <p>Il reality show che celebra la creatività e l'arte in tutte le sue forme.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Veloci</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#artisti">Artisti</a></li>
+                        <li><a href="#puntate">Puntate</a></li>
+                        <li><a href="#giuria">Giuria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Seguici</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Artisti in Competizione. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="artistModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenuto verrà aggiunto dinamicamente con JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
